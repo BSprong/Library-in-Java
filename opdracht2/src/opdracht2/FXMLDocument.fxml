@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="442.0" prefWidth="561.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="opdracht2.FXMLDocumentController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <TabPane prefHeight="442.0" prefWidth="561.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Boeken">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="isbn" layoutX="74.0" layoutY="93.0" prefHeight="67.0" prefWidth="406.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font></TextField>
+                        <Button fx:id="toevoegen" layoutX="74.0" layoutY="207.0" mnemonicParsing="false" onAction="#ToevoegenBoek" prefHeight="75.0" prefWidth="146.0" text="Toevoegen">
+                           <font>
+                              <Font size="18.0" />
+                           </font></Button>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Leden">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="300.0" prefWidth="400.0">
+                     <children>
+                        <TextField fx:id="lidtoevoegen" layoutX="66.0" layoutY="97.0" prefHeight="69.0" prefWidth="430.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextField>
+                        <Button fx:id="lid" layoutX="66.0" layoutY="194.0" mnemonicParsing="false" onAction="#Toevoegenlid" prefHeight="73.0" prefWidth="140.0" text="Voeg toe">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+    </children>
+</AnchorPane>
